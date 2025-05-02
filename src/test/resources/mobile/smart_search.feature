@@ -2,7 +2,7 @@
 Feature: Smart Search suggestions and logging
 
   Background:
-    Given The user is on the Home Page
+    Given I open the "Custom Foods" screen
 
   Scenario Outline: Log a food via Smart Search
     When I switch to the "<section>" section
