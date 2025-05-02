@@ -15,6 +15,7 @@ import utils.MobileActions;
  */
 public class SmartSearchPage extends BasePage {
 
+    CustomFoodPage customFoodPage = new CustomFoodPage();
     private static final By HOME_SEARCH_PLACEHOLDER =
         AppiumBy.iOSClassChain("**/XCUIElementTypeTextField[`value == 'Search foods to log'`]");
 
@@ -57,8 +58,9 @@ public class SmartSearchPage extends BasePage {
      * Verifies that the home page search input displays the correct placeholder text.
      */
     public void verifyHomePage() {
-        By Dashboard = AppiumBy.accessibilityId("Dashboard");
-        MobileActions.tap(mobileDriver, Dashboard);
+        customFoodPage.clickMenuIcon();
+        By Home = AppiumBy.accessibilityId("Home");
+        MobileActions.tap(mobileDriver, Home);
         waitForVisibility(HOME_SEARCH_PLACEHOLDER);
     }
 
