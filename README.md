@@ -18,7 +18,7 @@ nutritionix-automation
 │   │   │   ├── managers            # Driver and platform managers
 │   │   │   ├── platform            # Platform-specific types and managers
 │   │   │   ├── utils               # MobileActions and helper utilities
-│   │   │   └── web-mobile          # Page objects for web
+│   │   │   └── web-mobile          # Page objects for web-mobile tests
 │   │   │       ├── CustomFoodPage
 │   │   │       ├── HomePageMobile
 │   │   │       ├── LoginPageMobile
@@ -48,7 +48,7 @@ nutritionix-automation
 │           │   └── smart_search.feature
 │           └── web                # Web feature files
 ├── .gitignore
-└── pom.xml                       # Maven configuration
+└── pom.xml                        # Maven configuration
 ```
 
 ## Getting Started
